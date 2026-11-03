@@ -1,10 +1,10 @@
-# AGENTS.md (iOS 分支)
+# AGENTS.md
 
-给在 `ios` 分支工作的 AI / 自动化助手的项目约定。说明见 [README.md](./README.md)。
+给在 CrashReportKit-iOS 仓库工作的 AI / 自动化助手的项目约定。说明见 [README.md](./README.md)。
 
 ## 项目是什么
 
-- **CrashReportKit (iOS)**：Apple 平台崩溃上报 SDK (Swift)。
+- **CrashReportKit-iOS**：Apple 平台崩溃上报 SDK (Swift)。
 - 当前后端：**Firebase Crashlytics（临时）**。业务代码不得直接依赖 Firebase Crashlytics API。
 
 ## 架构约束（必须遵守）

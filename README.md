@@ -1,7 +1,7 @@
-# CrashReportKit (iOS)
+# CrashReportKit-iOS
 
-> **分支说明**：当前分支为 **`ios`** 分支，提供 iOS / Apple 平台 SDK (Swift) 及示例工程。<br/>
-> 🌐 **多平台架构总览与导航门户** 请见 [main 分支](../../tree/main) ｜ 🤖 **Android 实现** 请见 [android 分支](../../tree/android)
+> **iOS / Apple 平台 SDK 及示例工程仓库**  
+> 🤖 **Android 仓库** 请见 [CrashReportKit-Android](https://github.com/e-hai/CrashReportKit-Android) ｜ 🌐 **多平台架构总览** 请见 [CrashReportKit](https://github.com/e-hai/CrashReportKit)
 
 iOS 崩溃上报 SDK。业务侧只依赖统一门面 `CrashReport`，底层上报通道可替换。当前临时接入 **Firebase Crashlytics**。
 
@@ -98,15 +98,14 @@ Sources/CrashReportKit/
 在 Xcode 的 `Package Dependencies` 中添加：
 
 ```text
-https://github.com/e-hai/CrashReportKit.git
-分支：ios (或对应 Tag)
+https://github.com/e-hai/CrashReportKit-iOS.git
 ```
 
 或在 `Package.swift` 中声明：
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/e-hai/CrashReportKit.git", branch: "ios")
+    .package(url: "https://github.com/e-hai/CrashReportKit-iOS.git", from: "1.0.0")
 ]
 ```
 
@@ -115,9 +114,9 @@ dependencies: [
 在 `Podfile` 中添加：
 
 ```ruby
-pod 'CrashReportKit', :git => 'https://github.com/e-hai/CrashReportKit.git', :branch => 'ios'
+pod 'CrashReportKit', :git => 'https://github.com/e-hai/CrashReportKit-iOS.git'
 # 若需启用 Firebase 后端并由 Podfile 统一拉取依赖：
-pod 'CrashReportKit/Firebase', :git => 'https://github.com/e-hai/CrashReportKit.git', :branch => 'ios'
+pod 'CrashReportKit/Firebase', :git => 'https://github.com/e-hai/CrashReportKit-iOS.git'
 ```
 
 ---

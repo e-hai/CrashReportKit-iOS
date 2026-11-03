@@ -8,10 +8,10 @@ Business code only depends on CrashReportKit, and underlying crash vendors (such
 can be swapped seamlessly without modifying call sites.
                        DESC
 
-  s.homepage         = 'https://github.com/e-hai/CrashReportKit'
+  s.homepage         = 'https://github.com/e-hai/CrashReportKit-iOS'
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'e-hai' => 'dev@example.com' }
-  s.source           = { :git => 'https://github.com/e-hai/CrashReportKit.git', :branch => 'ios', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/e-hai/CrashReportKit-iOS.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '14.0'
   s.osx.deployment_target = '11.0'
